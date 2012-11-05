@@ -25,7 +25,7 @@ static dispatch_once_t oncePredicate;
     if (!self) {
         return nil;
     }
-    
+    NSLog(@"Base Url == %@",url);
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
     
     // Accept HTTP Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1
